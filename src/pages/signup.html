@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sign up — QuickConvert</title>
+<link rel="stylesheet" href="../../assets/css/style.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-[#201D1A] bg-white antialiased">
+
+<nav class="bg-white border-b border-[#E4E0DA] sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16">
+      <a href="../../index.html" class="flex items-center gap-2">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="26" height="26" rx="6" stroke="#C4501C" stroke-width="2"/>
+          <path d="M9 18L18 9M18 9H11M18 9V16" stroke="#C4501C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="font-display font-bold text-lg">QuickConvert</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../../index.html" class="text-sm font-medium hover:text-[#C4501C]">Home</a>
+        <a href="about.html" class="text-sm font-medium hover:text-[#C4501C]">About</a>
+        <a href="contact.html" class="text-sm font-medium hover:text-[#C4501C]">Contact</a>
+      </div>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="signin.html" class="text-sm font-medium hover:text-[#C4501C]">Sign in</a>
+        <a href="signup.html" class="text-sm font-medium bg-[#201D1A] text-white px-4 py-2 rounded">Sign up</a>
+      </div>
+      <label for="nav-toggle" class="md:hidden inline-flex items-center justify-center p-2 cursor-pointer">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </label>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="hidden peer" />
+    <div class="hidden peer-checked:block md:hidden pb-4 space-y-2">
+      <a href="../../index.html" class="block text-sm font-medium">Home</a>
+      <a href="about.html" class="block text-sm font-medium">About</a>
+      <a href="contact.html" class="block text-sm font-medium">Contact</a>
+      <a href="signin.html" class="block text-sm font-medium">Sign in</a>
+      <a href="signup.html" class="block text-sm font-medium text-[#C4501C]">Sign up</a>
+    </div>
+  </div>
+</nav>
+
+<section class="max-w-md mx-auto px-4 sm:px-6 py-16">
+  <div class="border border-[#E4E0DA] rounded-lg p-8">
+    <h1 class="font-display text-2xl font-bold">Create your account</h1>
+    <p class="mt-1 text-sm text-[#6B6560]">Optional — every tool works without one too.</p>
+
+    <form class="mt-8 space-y-5" action="#" method="POST">
+      <div>
+        <label for="su-name" class="block mb-1.5 text-sm font-medium">Full name</label>
+        <input type="text" id="su-name" name="name" required class="w-full border border-[#E4E0DA] rounded px-3 py-2.5 text-sm focus:outline-none focus:border-[#C4501C]" />
+      </div>
+
+      <div>
+        <label for="su-email" class="block mb-1.5 text-sm font-medium">Email address</label>
+        <input type="email" id="su-email" name="email" required class="w-full border border-[#E4E0DA] rounded px-3 py-2.5 text-sm focus:outline-none focus:border-[#C4501C]" />
+      </div>
+
+      <div>
+        <label for="su-password" class="block mb-1.5 text-sm font-medium">Password</label>
+        <input type="password" id="su-password" name="password" required minlength="8" class="w-full border border-[#E4E0DA] rounded px-3 py-2.5 text-sm focus:outline-none focus:border-[#C4501C]" />
+      </div>
+
+      <div class="flex items-start gap-2">
+        <input type="checkbox" id="su-terms" name="terms" required class="mt-0.5 rounded border-[#E4E0DA] text-[#C4501C]" />
+        <label for="su-terms" class="text-sm text-[#6B6560]">I agree to the terms and privacy policy.</label>
+      </div>
+
+      <button type="submit" class="w-full bg-[#C4501C] text-white font-medium py-2.5 rounded hover:bg-[#9C3E15]">Create account</button>
+
+      <p class="text-sm text-center text-[#6B6560]">Already have an account? <a href="signin.html" class="text-[#C4501C] font-medium hover:underline">Sign in</a>.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="border-t border-[#E4E0DA]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+    <p class="text-center text-xs text-[#6B6560]">© 2026 QuickConvert. Built by Hannan for the Web Engineering course.</p>
+  </div>
+</footer>
+
+</body>
+</html>
